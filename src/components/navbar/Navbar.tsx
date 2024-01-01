@@ -18,6 +18,9 @@ export default function NavbarPage() {
             <li>
               <Link href={'/services'}>Services</Link>
             </li>
+            <li>
+              <Link href={'/contact'}>Contact</Link>
+            </li>
             </ul>
           </div>
           <Link className="btn btn-ghost text-xl" href={'/'}> My App</Link>
@@ -32,6 +35,9 @@ export default function NavbarPage() {
             </li>
             <li>
               <Link href={'/services'}>Services</Link>
+            </li>
+            <li>
+              <Link href={'/contact'}>Contact</Link>
             </li>
           </ul>
         </div>
