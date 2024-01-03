@@ -1,4 +1,6 @@
+"use client"
 import React from "react";
+import ServiceStatus from "../masculinious/servicestatus/pags";
 
 export default function HomePage() {
     const handleClick = () => {
@@ -6,18 +8,21 @@ export default function HomePage() {
       };
 
     return (
-        <div className="hero min-h-screen" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
-  <div className="hero-overlay bg-opacity-60"></div>
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button 
-      className="btn btn-primary"
+      <div>
+        <div className="flex justify-center py-5">
+          <div className="flex">
+            <div className="text-6xl bold">Let get Out</div>
+            <div>
+            <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+
+            </div>
+          </div>
+          <div>Test</div>
+        </div>
+        <div className="flex justify-center py-10">
+        <ServiceStatus/>
+        </div>
+      </div>
       
-      >Check this</button>
-    </div>
-  </div>
-</div>
     )
   }
