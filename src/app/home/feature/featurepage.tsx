@@ -18,8 +18,8 @@ const FeaturePage = () => {
           it.
         </p>
       </div>
-      <div className="flex p-4">
-        <div className="mx-20">
+      <div className="flex flex-col sm:flex-row p-4">
+        <div className="mx-5 lg:mx-20 ">
           <div className="mockup-phone">
             <div className="camera"></div>
             <div className="display">
