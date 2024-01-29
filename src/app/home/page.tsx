@@ -11,6 +11,7 @@ import Image from "next/image";
 import FeaturePage from "./feature/featurepage";
 import PortfolioPage from "./feature/portfoliopage";
 import AppDown from "./feature/appDown";
+import PricingPage from "./feature/pricingPage";
 
 export default function HomePage() {
   const handleClick = () => {
@@ -49,7 +50,7 @@ export default function HomePage() {
       <div><FeaturePage /></div>
       <div><PortfolioPage/></div>
       <div><AppDown/></div>
-      <div></div>
+      <div><PricingPage/></div>
 
     </div>
 
