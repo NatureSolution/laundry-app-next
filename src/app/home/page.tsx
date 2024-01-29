@@ -10,6 +10,7 @@ import i4 from '../../../public/images/bbc.9cfc75a9.svg'
 import Image from "next/image";
 import FeaturePage from "./feature/featurepage";
 import PortfolioPage from "./feature/portfoliopage";
+import AppDown from "./feature/appDown";
 
 export default function HomePage() {
   const handleClick = () => {
@@ -40,14 +41,14 @@ export default function HomePage() {
         <Image src={i1} width='8px' height='4px' placeholder="empty" />
         <Image src={i2} width='8px' height='4px' placeholder="empty" />
         <Image src={i3} width='8px' height='4px' placeholder="empty" />
-        <Image src={i1} width='8px' height='4px' placeholder="empty" />
+        <Image src={i4} width='8px' height='4px' placeholder="empty" />
         <Image src={i1} width='8px' height='4px' placeholder="empty" />
         <Image src={i1} width='8px' height='4px' placeholder="empty" />
 
       </div>
       <div><FeaturePage /></div>
       <div><PortfolioPage/></div>
-      <div></div>
+      <div><AppDown/></div>
       <div></div>
 
     </div>

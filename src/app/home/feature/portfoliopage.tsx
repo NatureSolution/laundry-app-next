@@ -54,21 +54,19 @@ const cards = [
 export default function PortfolioPage() {
     return (
         <div>
-            <div>Now is the time to build your portfolio.
+            <div className=" p-20 mx-20 text-center"> <span className="text-3xl font-normal">Now is the time to build your portfolio.</span> <br />
                 With typical market returns, you have to start young to secure your future. With Pocket, it’s never too late to build your nest egg.</div>
             <div>
-            <div className="flex flex-wrap -mx-4">
+            <div className="flex flex-wrap mx-4">
       {cards.map((card) => (
         <div key={card.id} className="w-full md:w-1/3 p-4">
           <div className="bg-white rounded-lg overflow-hidden shadow-md">
             {/* <img src={icon1} alt={card.title} className="w-80 h-80 object-cover" /> */}
             <Image src={icon2} alt="Picture of the author" width="40" height="40" placeholder="empty" />
             <div className="p-7">
-              <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
-              <p className="text-gray-600">{truncateDescription(card.description, 50)}</p>
-              <Link href={`/services/${card.id}`}>
-              <button className="btn btn-sm btn-outline btn-warning">Detail</button>
-              </Link>
+              <h2 className="text-l font-semibold mb-2">{card.title}</h2>
+              <p className="text-sm text-gray-600">{truncateDescription(card.description, 50)}</p>
+              
             </div>
           </div>
         </div>
