@@ -12,6 +12,8 @@ import FeaturePage from "./feature/featurepage";
 import PortfolioPage from "./feature/portfoliopage";
 import AppDown from "./feature/appDown";
 import PricingPage from "./feature/pricingPage";
+import RadioComponent from "./feature/radioGroup";
+import TestComponent from "./feature/radioGroup";
 
 export default function HomePage() {
   const handleClick = () => {
@@ -51,6 +53,7 @@ export default function HomePage() {
       <div><PortfolioPage/></div>
       <div><AppDown/></div>
       <div><PricingPage/></div>
+      <div><TestComponent/></div>
 
     </div>
 
