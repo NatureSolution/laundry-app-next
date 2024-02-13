@@ -7,7 +7,7 @@ import Image from "next/image";
 const FeaturePage = () => {
   return (
     <div className="bg-black text-white">
-      <div className="mx-20 p-20 text-center">
+      <div className="lg:mx-20 p-10 text-center">
         <h1 className="text-3xl bold">
           Every feature you need to win. Try it for yourself.
         </h1>
