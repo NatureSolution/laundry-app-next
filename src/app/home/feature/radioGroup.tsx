@@ -1,6 +1,30 @@
+import { useState } from "react";
+
 export default function TestComponent () {
+
+  const [showMonthly, setShowMonthly] = useState(true);
+  const [dailyPrice, setDailyPrice] = useState(1);
+
+  const toggleView = () => {
+    setShowMonthly((prev) => !prev);
+  };
+
+  const calculateMonthlyPrice = () => {
+    return showMonthly ? dailyPrice * 30 * 0.7 : dailyPrice;
+  };
+
   return (
 <div className="container mx-auto mt-10">
+<div className="flex justify-center mt-8">
+        <button
+          className={`bg-${showMonthly ? 'blue-500' : 'green-500'} hover:bg-${
+            showMonthly ? 'blue-700' : 'green-700'
+          }  font-bold py-2 px-4 shadow rounded border border-red-500`}
+          onClick={toggleView}
+        >
+          {showMonthly ? 'Monthly' : 'Daily'}
+        </button>
+      </div>
       <h1 className="text-4xl font-bold mb-8">Card Group</h1>
       
       {/* Large Screens - 3 Cards */}

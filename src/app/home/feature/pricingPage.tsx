@@ -26,23 +26,29 @@ export default function PricingPage() {
           {showMonthly ? 'Monthly' : 'Daily'}
         </button>
       </div>
-      <div className="flex justify-center m-10 gap-5">
+      <div className="flex justify-center m-10 gap-5 ">
         {/* Product 1 */}
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-base-100 shadow-xl w-full md:w-1/3">
           <div className="card-body">
             <h2 className="card-title">VIP</h2>
             <p className='text-sm'>You’ve got a huge amount of assets but it’s not enough. To the moon.</p>
             <p>Price: {showMonthly ? `$${calculateMonthlyPrice()}` : `$${dailyPrice}`}</p>
             <div className="card-actions justify-end">
-            <button className="btn btn-secondary justify-center w-full text-center">Choose plan</button>
+            <button className="btn btn-primary justify-center w-full text-center">Choose plan</button>
+            </div>
+            <div>
+              <p>x</p>
+              <p>y</p>
+              <p>x</p>
+              <p>a</p>
             </div>
           </div>
         </div>
 
         {/* Product 2 */}
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card bg-base-100 shadow-xl w-full md:w-1/3">
           <div className="card-body">
-            <h2 className="card-title">Card title!</h2>
+            <h2 className="card-title">Normal</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <p>Price: {showMonthly ? `$${calculateMonthlyPrice()}` : `$${dailyPrice}`}</p>
             <div className="card-actions justify-end">
@@ -52,15 +58,16 @@ export default function PricingPage() {
         </div>
 
         {/* Product 3 */}
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card bg-base-100 shadow-xl w-full md:w-1/3">
           <div className="card-body">
-            <h2 className="card-title">Card title!</h2>
+            <h2 className="card-title">Regilar</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <p>Price: {showMonthly ? `$${calculateMonthlyPrice()}` : `$${dailyPrice}`}</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
-            </div>
+           
           </div>
+          <div className="card-actions justify-end">
+          <button className="btn btn-secondary justify-center w-full text-center">Choose plan</button>
+            </div>
         </div>
       </div>
     </div>
