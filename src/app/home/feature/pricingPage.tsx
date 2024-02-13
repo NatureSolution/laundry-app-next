@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import icon from '../../../../public/icon/tick.svg'
+import Image from 'next/image';
 
 export default function PricingPage() {
   const [showMonthly, setShowMonthly] = useState(true);
@@ -37,10 +39,13 @@ export default function PricingPage() {
             <button className="btn btn-primary justify-center w-full text-center">Choose plan</button>
             </div>
             <div>
-              <p>x</p>
-              <p>y</p>
-              <p>x</p>
-              <p>a</p>
+              <ul>
+                <li className='flex py-2'> <Image className='text-blue' src={icon} width={20}
+        height={20} alt='text'/> <span className='ml-2'>text</span></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
           </div>
         </div>
