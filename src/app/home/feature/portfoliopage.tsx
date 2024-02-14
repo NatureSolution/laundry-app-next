@@ -54,7 +54,7 @@ const cards = [
 export default function PortfolioPage() {
     return (
         <div>
-            <div className=" p-20 mx-20 text-center"> <span className="text-3xl font-normal">Now is the time to build your portfolio.</span> <br />
+            <div className=" p-10 lg:mx-20 text-center"> <span className="text-3xl font-normal">Now is the time to build your portfolio.</span> <br />
                 With typical market returns, you have to start young to secure your future. With Pocket, it’s never too late to build your nest egg.</div>
             <div>
             <div className="flex flex-wrap mx-4">

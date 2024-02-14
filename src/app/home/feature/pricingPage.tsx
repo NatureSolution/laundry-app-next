@@ -28,7 +28,7 @@ export default function PricingPage() {
           {showMonthly ? 'Monthly' : 'Daily'}
         </button>
       </div>
-      <div className="flex justify-center m-10 gap-5 ">
+      <div className="flex flex-col sm:flex-row justify-center m-10 gap-5 ">
         {/* Product 1 */}
         <div className="card bg-base-100 shadow-xl w-full md:w-1/3">
           <div className="card-body">
