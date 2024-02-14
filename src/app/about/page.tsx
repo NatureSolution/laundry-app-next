@@ -7,7 +7,7 @@ export default function About() {
        <div>
         <div><AboutBanner/></div>
         <div><EasyBokking/></div>
-        <div></div>
+        <div> <WeFeatured/></div>
         <div></div>
        </div>
     )
