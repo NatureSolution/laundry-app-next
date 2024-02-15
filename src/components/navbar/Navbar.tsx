@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 export default function NavbarPage() {
+const isLogin = false;
+
     return (
         <div className="navbar bg-base-100">
         <div className="navbar-start">
@@ -49,14 +51,25 @@ export default function NavbarPage() {
         </div>
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        {isLogin &&
+        <>
         <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><Link href={'/login'}>Login</Link></li>
+        <a className="justify-between">
+          Profile
+          <span className="badge">New</span>
+        </a>
+      </li>
+      <li><a>Settings</a></li>
+      <li><a>Logout</a></li></>
+        
+        }
+        {!isLogin &&
+        <>
+        <li><Link href={'../login'}>Login</Link></li>
+        </>
+        }
+        
+        
       </ul>
       </div>
         </div>

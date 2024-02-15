@@ -1,9 +1,8 @@
 "use client"
-import Link from 'next/link';
-// pages/login.js
+
 import React, { useState } from 'react';
 
-export default function Login() {
+export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -18,10 +17,13 @@ export default function Login() {
   };
 
   return (
-    <div className='flex justify-center min-h-screen'>
-      <div>
-        <p className='py-10 font-sans text-3xl text-bold font-semibold text-tale-500'> Login </p>
-      <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="hero min-h-screen bg-base-200">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="text-center lg:text-left">
+      <h1 className="text-5xl font-bold">Register now!</h1>
+      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+    </div>
+    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={handleSubmit} className="card-body">
         <div className="form-control">
           <label className="label">
@@ -61,8 +63,7 @@ export default function Login() {
         </div>
       </form>
     </div>
-      </div>
-
-    </div>
+  </div>
+</div>
   );
 }
