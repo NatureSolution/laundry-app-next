@@ -1,9 +1,12 @@
 "use client"
 import Link from 'next/link';
-// pages/login.js
 import React, { useState } from 'react';
+import {auth} from '@/lib/firebase'
+
 
 export default function Login() {
+  console.log('Verify', auth.config )
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
