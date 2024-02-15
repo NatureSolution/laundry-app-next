@@ -20,7 +20,7 @@ export default function Login() {
   return (
     <div className='flex justify-center min-h-screen'>
       <div>
-        <p className='py-10 font-sans text-3xl text-bold font-semibold text-tale-500'> Login </p>
+        <p className='m-5 font-sans text-3xl text-bold font-semibold text-tale-500'> Login </p>
       <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={handleSubmit} className="card-body">
         <div className="form-control">
@@ -59,7 +59,11 @@ export default function Login() {
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
         </div>
+        <p className='text-center'>
+        <span>New User!</span> <span><Link href={'../register'}>Register</Link></span>
+      </p>
       </form>
+      
     </div>
       </div>
 
