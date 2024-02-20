@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "63454a0fd8b66392081ba669",
+    "isActive": false,
+    "picture": "https://prod-cdn.laundryheap.com/images/static/price_services/mobile/wash_big.png",
+    "serviceName": "Wash",
+    "price": 21,
+    "about": "For everyday laundry, bedsheets and towels.",
+    "type": ["WASH", "TUMBLE-DRY"]
+  },
+  {
+    "_id": "63454a0f9ddcc5e6742eaa73",
+    "isActive": true,
+    "picture": "https://prod-cdn.laundryheap.com/images/static/price_services/mobile/wash_and_iron_big.png",
+    "price": 21,
+    "serviceName": "Wash & Iron",
+    "about": "For everyday laundry that requires ironing.",
+    "type": ["WASH", "TUMBLE-DRY", "IRONING", "ON HANGERS"]
+  },
+  {
+    "_id": "63454a0f2f9def11ea17acc4",
+    "isActive": true,
+    "picture": "https://prod-cdn.laundryheap.com/images/static/price_services/mobile/dry_cleaning_big.png",
+    "price": 23,
+    "serviceName": "Dry Cleaning",
+    "about": "For delicate items and fabrics.",
+    "type": ["DRY CLEANING", "IRONING", "ON HANGERS"]
+  },
+  {
+    "_id": "63454a0fc08f607c024b79c6",
+    "isActive": true,
+    "picture": "https://prod-cdn.laundryheap.com/images/static/price_services/mobile/ironing_big.png",
+    "price": 36,
+    "serviceName": "Ironing",
+    "about": "For items that are already clean.",
+    "type": ["IRONING", "ON HANGERS"]
+  },
+  {
+    "_id": "63454a0f52f5d40626916b72",
+    "isActive": true,
+    "picture": "https://prod-cdn.laundryheap.com/images/static/price_services/mobile/duvets_bulky_items_big.png",
+    "price": 25,
+    "serviceName": "Duvets & Bulky Items",
+    "about": "For larger items that require extra care.",
+    "type": ["WASH", "TUMBLE-DRY"]
+  },
+  {
+    "_id": "63454a0fcaf8c43f116daec6",
+    "isActive": true,
+    "picture": "https://prod-cdn.laundryheap.com/images/static/price_services/mobile/deals_big.png",
+    "price": 32,
+    "serviceName": "Deals",
+    "about": "Special offers.",
+    "type": ["WASH", "TUMBLE-DRY"]
+  }
+]
