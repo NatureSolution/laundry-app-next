@@ -14,7 +14,7 @@ export default function Service () {
 
   return (
     <div className="container mx-auto pt-10">
-      <p className="text-3xl lg:text-6xl font-extrabold text-primary ">
+      <p className=" text-center text-3xl lg:text-6xl font-extrabold text-sky-500 ">
         Our Services
       </p>
       <div className=" grid sm:grid-cols-1 lg:grid-cols-3 mx-4 gap-3 py-5">
