@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 import React, { useState } from 'react';
-import {auth} from '@/lib/firebase'
+import {auth} from '@/app/firebase/firebase'
 
 
 export default function Login() {
