@@ -5,6 +5,13 @@ import ServiceCard from "./serviceCard";
 
 export default function Service () {
   const [services, setServices] = useState([]);
+  const [servicePrice, setServicePrice] = useState([]);
+
+  useEffect(() => {
+    fetch("price.json")
+      .then((res) => res.json())
+      .then((data) => setServicePrice(data));
+  }, []);
 
   useEffect(() => {
     fetch("service.json")
@@ -19,7 +26,8 @@ export default function Service () {
       </p>
       <div className=" grid sm:grid-cols-1 lg:grid-cols-3 mx-4 gap-3 py-5">
         {services.map((service) => (
-          <ServiceCard key={service._id} service={service}></ServiceCard>
+          <ServiceCard key={service._id} service={service}
+          servicePrice = {servicePrice}></ServiceCard>
         ))}
       </div>
     </div>

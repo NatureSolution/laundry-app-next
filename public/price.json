@@ -1,0 +1,64 @@
+{
+  "services": [
+    {
+      "serviceName": "Wash",
+      "products": [
+        { "name": "T-shirt", "price": 2.5 },
+        { "name": "Jeans", "price": 5.0 },
+        { "name": "Socks", "price": 1.0 },
+        { "name": "Underwear", "price": 1.0 },
+        { "name": "Towel", "price": 3.0 }
+      ]
+    },
+    {
+      "serviceName": "Wash & Iron",
+      "products": [
+        { "name": "Shirt", "price": 4.0 },
+        { "name": "Pants", "price": 6.0 },
+        { "name": "Dress", "price": 8.0 },
+        { "name": "Blouse", "price": 5.0 },
+        { "name": "Skirt", "price": 5.0 }
+      ]
+    },
+    {
+      "serviceName": "Dry Cleaning",
+      "products": [
+        { "name": "Suit", "price": 12.0 },
+        { "name": "Dress", "price": 10.0 },
+        { "name": "Coat", "price": 15.0 },
+        { "name": "Blouse", "price": 8.0 },
+        { "name": "Skirt", "price": 7.0 }
+      ]
+    },
+    {
+      "serviceName": "Ironing",
+      "products": [
+        { "name": "Shirt", "price": 2.0 },
+        { "name": "Pants", "price": 3.0 },
+        { "name": "Dress Shirt", "price": 2.5 },
+        { "name": "Dress Pants", "price": 4.0 },
+        { "name": "Blouse", "price": 2.0 }
+      ]
+    },
+    {
+      "serviceName": "Duvets & Bulky Items",
+      "products": [
+        { "name": "Single Duvet", "price": 15.0 },
+        { "name": "Double Duvet", "price": 20.0 },
+        { "name": "King Duvet", "price": 25.0 },
+        { "name": "Blanket", "price": 18.0 },
+        { "name": "Sleeping Bag", "price": 22.0 }
+      ]
+    },
+    {
+      "serviceName": "Deals",
+      "products": [
+        { "name": "Weekly Wash & Fold", "price": 30.0 },
+        { "name": "Monthly Ironing", "price": 40.0 },
+        { "name": "Bulk Dry Cleaning", "price": 100.0 },
+        { "name": "Family Package", "price": 70.0 },
+        { "name": "Student Discount", "price": 25.0 }
+      ]
+    }
+  ]
+}

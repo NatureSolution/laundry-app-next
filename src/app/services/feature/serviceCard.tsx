@@ -1,9 +1,24 @@
-
+'use client'
 
 import Link from "next/link";
 
-export default function ServiceCard ({ service })  {
+export default function ServiceCard ({ service, servicePrice })  {
   const { about, serviceName, price, type, picture } = service;
+
+
+  if (servicePrice && servicePrice.services && Array.isArray(servicePrice.services)) {
+    // Access the first service from the services array
+    const firstService = servicePrice.services[0];
+    console.log("First Service:", firstService);
+
+    // Use the properties of the first service as needed
+    const { serviceName: firstServiceName, products: firstServiceProducts } = firstService;
+    console.log("First Service Name:", firstServiceName);
+    console.log("First Service Products:", firstServiceProducts);
+  } else {
+    console.log("Invalid or missing servicePrice object");
+  }
+
   return (
     <Link href={"services/price"}>
       <div className="card mx-auto bg-base-100 flex flex-row lg:flex-col shadow-xl text-left lg:text-center">
