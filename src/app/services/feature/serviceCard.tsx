@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ServiceCard ({ service })  {
   const { about, serviceName, price, type, picture } = service;
   return (
-    <Link href={"/price"}>
+    <Link href={"services/price"}>
       <div className="card mx-auto bg-base-100 flex flex-row lg:flex-col shadow-xl text-left lg:text-center">
         <div className="bg-sky-500 lg:bg-white sm:m-5">
           <img

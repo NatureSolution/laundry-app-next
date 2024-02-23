@@ -11,7 +11,7 @@ export default function PricePage () {
 
   return (
     <div className="max-w-md mx-auto mt-10">
-      <div className="flex space-x-4 mb-4">
+      <div className="flex space-x-9 mb-4 rounded-lg">
         <input
           type="radio"
           id="tab1"
@@ -47,9 +47,13 @@ export default function PricePage () {
         </label>
       </div>
 
-      <div className="p-4 border">
+      <div className='flex w-70 m-10'>
+      <div className="p-4 border rounded-lg ">
         {selectedTab === 'tab1' && <div>Tab 1 Content Goes Here</div>}
         {selectedTab === 'tab2' && <div>Tab 2 Content Goes Here</div>}
+      </div>
+
+      <div className='w-30'>test bg</div>
       </div>
     </div>
   );
